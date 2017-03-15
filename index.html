@@ -4,23 +4,17 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body ng-app>
+  <body ng-app="madlibApp" ng-controller="myController">
 
-    Noun: <input type="text" ng-model="noun">
+    <a href="#userinput">Input your word choices.</a>
+    <a href="#viewmadlib">See your results!</a>
 
-    Adjective: <input type="text" ng-model="adjective">
-
-    <h2>Name: {{name}}</h2>
-    <h2>Adverb: {{adverb}}</h2>
-    <h2>Noun: {{noun}}</h2>
-    <h2>Name: {{name}}</h2>
-    <h2>Theme: {{theme}}</h2>
-    <h2>A place: {{a place}}</h2>
-
-    <h2>Adjective: {{adjective}}</h2>
-
-    <p>{{noun}} is very {{adjective}}.</p>
+    <ng-view></ng-view>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
-  </body>
+  <script src="https://code.angularjs.org/1.6.2/angular-route.js"></script>
+  <script src="script.js"></script>
+  <script src="factory.js"></script>
+
+</body>
 </html>
